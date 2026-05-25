@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Fitness</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- Loader -->
+
+<div id="loader">
+
+    <div class="spinner"></div>
+
+</div>
+<body>
+
+    <h1><!-- Navbar -->
+
+<nav>
+    <div class="logo">
+    <span>APEX</span> FITNESS
+</div>
+    <button id="theme-toggle">🌙</button>
+    <button id="music-toggle">🎵</button>
+
+<audio id="gym-music" src="music.mp3"></audio>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#membership">Membership</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav></h1>
+
+<!-- Hero Section -->
+
+<section class="hero" id="home">
+
+    <div class="hero-text">
+       <h1><span id="typing"></span></h1>
+
+        <p>
+            Build strength, improve fitness, and become the best version of yourself.
+        </p>
+
+        <button>Join Now</button>
+    </div>
+
+</section>
+
+<!-- About Section -->
+
+<section class="about" id="about">
+
+    <div class="about-text">
+        <h2>Why Choose Us?</h2>
+
+        <p>
+            We provide world-class fitness equipment, professional trainers,
+            personalized workout plans, and a motivating environment to help
+            you achieve your fitness goals.
+        </p>
+    </div>
+
+</section>
+
+<!-- Stats Section -->
+
+<section class="stats">
+
+    <div class="stat-box">
+        <h1 class="counter" data-target="500">0</h1>
+        <p>Active Members</p>
+    </div>
+
+    <div class="stat-box">
+        <h1 class="counter" data-target="20">0</h1>
+        <p>Expert Trainers</p>
+    </div>
+
+    <div class="stat-box">
+        <h1 class="counter" data-target="10">0</h1>
+        <p>Years Experience</p>
+    </div>
+
+</section>
+
+<!-- Features Section -->
+
+<section class="features" id="programs">
+
+    <div class="card">
+        <h3>Modern Equipment</h3>
+        <p>
+            Train with high-quality modern gym machines and equipment.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Expert Trainers</h3>
+        <p>
+            Get guidance from experienced professional fitness trainers.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Healthy Nutrition</h3>
+        <p>
+            Personalized diet and nutrition plans for better results.
+        </p>
+    </div>
+
+</section>
+
+<!-- Trainers Section -->
+
+<section class="trainers">
+
+    <h2>Our Trainers</h2>
+
+    <div class="trainer-container">
+
+        <div class="trainer-card">
+            <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?q=80&w=687&auto=format&fit=crop" alt="Trainer">
+
+            <h3>Rahul Sharma</h3>
+
+            <p>Strength Coach</p>
+        </div>
+
+        <div class="trainer-card">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1170&auto=format&fit=crop" alt="Trainer">
+
+            <h3>Priya Mehta</h3>
+
+            <p>Yoga Trainer</p>
+        </div>
+
+        <div class="trainer-card">
+            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1170&auto=format&fit=crop" alt="Trainer">
+
+            <h3>Aryan Verma</h3>
+
+            <p>Fitness Expert</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- BMI Calculator -->
+
+<section class="bmi">
+
+    <h2>BMI Calculator</h2>
+
+    <input type="number" id="height" placeholder="Enter height in cm">
+
+    <input type="number" id="weight" placeholder="Enter weight in kg">
+
+    <button onclick="calculateBMI()">Calculate</button>
+
+    <h3 id="result"></h3>
+
+</section>
+
+<!-- Membership Section -->
+
+<section class="membership" id="membership">
+
+    <h2>Membership Plans</h2>
+
+    <div class="plans">
+
+        <div class="plan-card">
+            <h3>Basic</h3>
+            <h1>₹999</h1>
+            <p>Access to gym equipment</p>
+            <button>Join Now</button>
+        </div>
+
+        <div class="plan-card">
+            <h3>Standard</h3>
+            <h1>₹1999</h1>
+            <p>Equipment + Personal Trainer</p>
+            <button>Join Now</button>
+        </div>
+
+        <div class="plan-card">
+            <h3>Premium</h3>
+            <h1>₹2999</h1>
+            <p>All services + Diet Plan</p>
+            <button>Join Now</button>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Testimonials Section -->
+
+<section class="testimonials">
+
+    <h2>What Our Members Say</h2>
+
+    <div class="testimonial-container">
+
+        <div class="testimonial-card">
+            <h3>⭐⭐⭐⭐⭐</h3>
+
+            <p>
+                "Amazing trainers and environment. I transformed my body in just 4 months!"
+            </p>
+
+            <h4>- Riya Sharma</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <h3>⭐⭐⭐⭐⭐</h3>
+
+            <p>
+                "The best gym experience I've ever had. Professional and motivating!"
+            </p>
+
+            <h4>- Aman Verma</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <h3>⭐⭐⭐⭐⭐</h3>
+
+            <p>
+                "Clean equipment, supportive trainers, and excellent workout plans."
+            </p>
+
+            <h4>- Sneha Kapoor</h4>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Contact Section -->
+
+<section class="contact" id="contact">
+
+    <h2>Contact Us</h2>
+
+    <form id="contact-form">
+
+        <input type="text" placeholder="Enter Your Name" required>
+
+        <input type="email" placeholder="Enter Your Email" required>
+
+        <textarea placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+    <h3 id="success-message"></h3>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+    <p>© 2026 Apex Fitness | All Rights Reserved</p>
+
+</footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+<div class="cursor-glow"></div>
+</body>
+</html>
